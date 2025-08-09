@@ -1,12 +1,45 @@
-# React + Vite
+ # DOCX to PDF Converter (React + Node.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project allows users to upload a Word (.docx) file via a React frontend, send it to a Node.js backend, and receive a PDF version of the document.
+The backend uses Mammoth to extract text & images from DOCX, and Puppeteer to render it into a printable PDF.
 
-Currently, two official plugins are available:
+ # Features
+Upload .docx files from the browser
+Convert DOCX → PDF using server-side rendering
+Download the converted PDF instantly
+Handles basic formatting, text, and images
+Simple UI with loading indicator
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Screenshot  
+![alt text](frontend/public/image.png)
 
-## Expanding the ESLint configuration
+# Tech Stack
+Frontend
+React
+Axios
+Tailwind CSS
+React Icons
+Backend
+Node.js + Express
+Multer (file uploads)
+Mammoth (DOCX to HTML)
+Puppeteer (HTML to PDF)
+CORS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Installation & Setup
+
+git clone https://github.com/yourusername/docx-to-pdf.git
+cd docx-to-pdf
+cd backend
+npm install
+node server.js
+cd frontend
+npm install
+npm run dev
+
+# Usage
+Open the frontend in your browser.
+Click "Upload Word File" and select a .docx file.
+Click "Convert to PDF".
+The PDF will be downloaded automatically after conversion.
+
