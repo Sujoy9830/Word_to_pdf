@@ -28,7 +28,7 @@ CORS
 
 # Installation & Setup
 
-git clone https://github.com/yourusername/docx-to-pdf.git
+git clone https://github.com/sujoy9830/docx-to-pdf.git
 cd docx-to-pdf
 cd backend
 npm install
